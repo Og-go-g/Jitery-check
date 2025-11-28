@@ -116,7 +116,7 @@ export default function HomeClient({ initialStats = null, shareUrl }: HomeClient
 
   const handleShare = () => {
     if (currentShareUrl) {
-      const twitterUrl = `https://twitter.com/intent/tweet?url=${encodeURIComponent(currentShareUrl)}&text=${encodeURIComponent('Check out my Base Wrapped stats!')}`
+      const twitterUrl = `https://twitter.com/intent/tweet?url=${encodeURIComponent(currentShareUrl)}&text=${encodeURIComponent('Check out my Base Pulse stats!')}`
       window.open(twitterUrl, '_blank', 'noopener,noreferrer')
     }
   }
@@ -130,7 +130,7 @@ export default function HomeClient({ initialStats = null, shareUrl }: HomeClient
         {/* Header */}
         <div className="text-center mb-12">
           <h1 className="text-6xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-cyan-400 to-green-400 animate-pulse">
-            BASE WRAPPED
+            BASE PULSE
           </h1>
           <div className="h-1 w-32 mx-auto bg-gradient-to-r from-transparent via-green-400 to-transparent animate-pulse" />
           <p className="mt-4 text-green-500/70 text-sm">
@@ -256,7 +256,7 @@ export default function HomeClient({ initialStats = null, shareUrl }: HomeClient
               <div className="flex flex-col items-center gap-4">
                 <img
                   src={imageUrl}
-                  alt="BASE WRAPPED OG preview"
+                  alt="BASE PULSE OG preview"
                   className="w-full max-w-2xl rounded-xl border border-gray-800 shadow-2xl"
                 />
                 <div className="flex gap-4">

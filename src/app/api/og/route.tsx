@@ -50,7 +50,7 @@ export async function GET(request: NextRequest) {
                 letterSpacing: '2px',
               }}
             >
-              BASE WRAPPED
+              BASE PULSE
             </h1>
           </div>
 

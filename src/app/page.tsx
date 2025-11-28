@@ -24,10 +24,10 @@ export async function generateMetadata({
     const ogImageUrl = `${baseUrl}/api/og?days=${validatedDays}&txCount=${validatedTxCount}&gas=${validatedGas.toFixed(5)}`
 
     return {
-      title: 'My Base Wrapped Stats',
+      title: 'My Base Pulse',
       description: `Check out my onchain activity on Base! ${validatedTxCount.toLocaleString()} Transactions.`,
       openGraph: {
-        title: 'My Base Wrapped Stats',
+        title: 'My Base Pulse',
         description: `Check out my onchain activity on Base! ${parseInt(txCount).toLocaleString()} Transactions.`,
         type: 'website',
         images: [
@@ -35,13 +35,13 @@ export async function generateMetadata({
             url: ogImageUrl,
             width: 1200,
             height: 630,
-            alt: 'BASE WRAPPED Stats',
+            alt: 'BASE PULSE Stats',
           },
         ],
       },
       twitter: {
         card: 'summary_large_image',
-        title: 'My Base Wrapped Stats',
+        title: 'My Base Pulse',
         description: `Check out my onchain activity on Base! ${parseInt(txCount).toLocaleString()} Transactions.`,
         images: [ogImageUrl],
       },
@@ -50,17 +50,17 @@ export async function generateMetadata({
 
   // Default metadata if no parameters
   return {
-    title: 'BASE WRAPPED - Base Network Wallet Statistics',
+    title: 'BASE PULSE - Base Network Wallet Statistics',
     description:
       'Get detailed statistics about your Base network wallet: days active, transactions count, and ETH burned on gas.',
     openGraph: {
-      title: 'BASE WRAPPED - Base Network Wallet Statistics',
+      title: 'BASE PULSE - Base Network Wallet Statistics',
       description: 'Get your Base network wallet statistics',
       type: 'website',
     },
     twitter: {
       card: 'summary_large_image',
-      title: 'BASE WRAPPED',
+      title: 'BASE PULSE',
       description: 'Get your Base network wallet statistics',
     },
   }
