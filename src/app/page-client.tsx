@@ -36,7 +36,7 @@ export default function HomeClient({ initialStats = null, shareUrl }: HomeClient
         txCount: initialStats.txCount.toString(),
         gas: initialStats.gasSpent,
       })
-      setImageUrl(`/api/og?${ogParams.toString()}`)
+      setImageUrl(`/api/og?${ogParams.toString()}&v=2`)
       if (shareUrl) {
         setCurrentShareUrl(shareUrl)
       } else {
@@ -103,7 +103,7 @@ export default function HomeClient({ initialStats = null, shareUrl }: HomeClient
           txCount: result.txCount.toString(),
           gas: result.gasSpent,
         })
-        setImageUrl(`/api/og?${ogParams.toString()}`)
+        setImageUrl(`/api/og?${ogParams.toString()}&v=2`)
       } catch (err) {
         setError('Failed to fetch wallet stats. Please try again.')
         console.error(err)

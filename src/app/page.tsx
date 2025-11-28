@@ -21,7 +21,7 @@ export async function generateMetadata({
 
   if (days && txCount && gas && validatedDays > 0 && validatedTxCount > 0) {
     const baseUrl = getBaseUrl()
-    const ogImageUrl = `${baseUrl}/api/og?days=${validatedDays}&txCount=${validatedTxCount}&gas=${validatedGas.toFixed(5)}`
+    const ogImageUrl = `${baseUrl}/api/og?days=${validatedDays}&txCount=${validatedTxCount}&gas=${validatedGas.toFixed(5)}&v=2`
 
     return {
       title: 'My Base Pulse',
