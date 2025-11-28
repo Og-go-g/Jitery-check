@@ -2,12 +2,7 @@ import { Metadata } from 'next'
 import HomeClient from './page-client'
 
 function getBaseUrl(): string {
-  // Check if we're on Vercel
-  if (process.env.VERCEL_URL) {
-    return `https://${process.env.VERCEL_URL}`
-  }
-  // Development fallback
-  return process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'
+  return 'https://base-pulse.vercel.app'
 }
 
 export async function generateMetadata({
