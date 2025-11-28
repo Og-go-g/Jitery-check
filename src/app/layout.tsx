@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'BASE WRAPPED - Base Network Wallet Statistics',
+  title: 'BASE PULSE - Base Network Wallet Statistics',
   description:
     'Get detailed statistics about your Base network wallet: days active, transactions count, and ETH burned on gas. Analyze your on-chain activity on Base.',
   keywords: [
@@ -16,16 +16,16 @@ export const metadata: Metadata = {
     'gas',
     'transactions',
   ],
-  authors: [{ name: 'BASE WRAPPED' }],
+  authors: [{ name: 'BASE PULSE' }],
   openGraph: {
-    title: 'BASE WRAPPED - Base Network Wallet Statistics',
+    title: 'BASE PULSE - Base Network Wallet Statistics',
     description: 'Get your Base network wallet statistics',
     type: 'website',
     locale: 'en_US',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'BASE WRAPPED',
+    title: 'BASE PULSE',
     description: 'Get your Base network wallet statistics',
   },
   robots: {
