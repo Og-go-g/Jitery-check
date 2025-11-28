@@ -43,10 +43,10 @@ export async function GET(request: NextRequest) {
           >
             <h1
               style={{
-                fontSize: '64px',
+                fontSize: '72px',
                 fontWeight: 'bold',
-                color: '#0052FF',
-                textShadow: '0 0 20px rgba(0, 82, 255, 0.5)',
+                color: '#00FF94',
+                textShadow: '0 0 20px rgba(0, 255, 148, 0.5)',
                 letterSpacing: '2px',
               }}
             >
